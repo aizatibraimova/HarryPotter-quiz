@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Estonia&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+</head>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<body>
+    
+    <audio id="myAudio" src="prologue.mp3" loop="loop" autoplay="allowed"></audio>
+    <button id="myButton"><img src="https://img.icons8.com/ios-glyphs/30/000000/witch-.png" alt="Play Button"/></button>
+
+    <form>
+        <div id="header">
+            <h1 class="animate__animated animate__animate__lightSpeedInRight">How well do you know "Harry Potter" spells?</h1>
+        </div>
+
+        <div class="question">
+            <label>Question 1. You can easily paralyze your opponent with this little spell.</label>
+            <br>
+            <input type="radio" name="question1">Accio
+            <input type="radio" name="question1">Sectumsempra
+            <input type="radio" name="question1">Reparo
+            <input type="radio" name="question1" id="answer1">Petrificus Totalus
+        </div>
+
+        <div class="question">
+            <label>Question 2. This unlocking charm means you'll never need a locksmith again.</label>
+            <br>
+            <input type="radio" name="question2">Reparo
+            <input type="radio" name="question2" id="answer2">Alohomora
+            <input type="radio" name="question2">Expelliarmus
+            <input type="radio" name="question2">Obliviate
+        </div>
+
+        <div class="question">
+            <label>Question 3. Use this to duplicate your target.</label>
+            <br>
+            <input type="radio" name="question3" id="answer3">Geminio
+            <input type="radio" name="question3">Riddikulus
+            <input type="radio" name="question3">Lumos
+            <input type="radio" name="question3">Confundo
+        </div>
+
+        <div class="question">
+            <label>Question 4. An evil spell that is incredibly deadly.</label>
+            <br>
+            <input type="radio" name="question4">Wingardium Leviosa
+            <input type="radio" name="question4">Crucio
+            <input type="radio" name="question4">Stupefy
+            <input type="radio" name="question4" id="answer4">Avada Kedavra
+        </div>
+
+        <div class="question">
+            <label>Question 5. Makes your enemy drop whatever's in their hands.</label>
+            <br>
+            <input type="radio" name="question5" id="answer5">Expelliarmus
+            <input type="radio" name="question5">Lumos
+            <input type="radio" name="question5">Obliviate
+            <input type="radio" name="question5">Confundo
+        </div>
+
+        <div class="question">
+            <label>Question 6. Reveals secret, written messages.</label>
+            <br>
+            <input type="radio" name="question6">Expecto Patronum
+            <input type="radio" name="question6">Accio
+            <input type="radio" name="question6" id="answer6">Aparecium
+            <input type="radio" name="question6">Lumos
+        </div>
+
+        <div class="question">
+            <label>Question 7. This boggart-banishing spell takes something scary and turns it into something silly.</label>
+            <br>
+            <input type="radio" name="question7">Immobulus
+            <input type="radio" name="question7">Engorgio
+            <input type="radio" name="question7" id="answer7">Riddikulus
+            <input type="radio" name="question7">Serpensortia
+        </div>
+
+        <div class="question">
+            <label>Question 8. One of the three unforgivable curses, this torturous spell causes excruciating pain for your victim.</label>
+            <br>
+            <input type="radio" name="question8">Accio
+            <input type="radio" name="question8">Avada Kedavra
+            <input type="radio" name="question8">Stupefy
+            <input type="radio" name="question8" id="answer8">Crucio
+        </div>
+
+        <div class="question">
+            <label>Question 9. This dark spell leaves cuts on your victim that may never heal.</label>
+            <br>
+            <input type="radio" name="question9" id="answer9">Sectumsempra
+            <input type="radio" name="question9">Obliviate
+            <input type="radio" name="question9">Expelliarmus
+            <input type="radio" name="question9">Confundo
+        </div>
+
+        <div class="question">
+            <label>Question 10. This powerful defensive incantation uses a happy memory to conjure something positive, that can chase off Dementors.</label>
+            <br>
+            <input type="radio" name="question10">Lumos
+            <input type="radio" name="question10" id="answer10">Expecto Patronum
+            <input type="radio" name="question10">Expelliarmus
+            <input type="radio" name="question10">Accio
+        </div>
+
+    <button type="submit" class="btn">Submit answers</button>
+    <br>
+    <p id="show"></p>
+
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
